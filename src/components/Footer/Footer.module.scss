@@ -74,6 +74,8 @@
     }
     &___links{
       display: flex;
+      justify-content: space-around;
+      width: 100%;
       ul{
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -81,6 +83,9 @@
         padding-right: 5rem;
         color: $subtitle-color;
         font-size: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         li:first-child{
           color: $text-color;
           font-weight: 500;
