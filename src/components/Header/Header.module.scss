@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  padding-top: 3.75rem;
+}
+
+.header__logo {
+  color: $text-color;
+  font-weight: 700;
+  font-size: 2.5rem;
+  &___nft{
+    color: $color-logo;
+  }
+}
+
+.nav {
+  color: $text-color;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  li{
+    margin-right: 3.75rem;
+  }
+}
+
+.button {
+  font-weight: 700;
+  display: flex;
+  place-items: center;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}

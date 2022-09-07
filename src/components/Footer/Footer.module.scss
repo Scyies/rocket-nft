@@ -1,0 +1,120 @@
+@import "../../styles/variables";
+
+.footer {
+  background-color: $card-color;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 6.25rem;
+    padding-bottom: 3.75rem;
+    border-bottom: solid 1px;
+    border-color: $subtitle-color;
+    h4 {
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: $text-color;
+      span {
+        color: $color-logo;
+      }
+    }
+    div {
+      background-color: $color-logo;
+      aspect-ratio: 1 / 1;
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      place-items: center;
+      justify-content: center;
+    }
+  }
+  &__text {
+    display: flex;
+    &___news{
+      display: flex;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: solid 1px;
+      border-color: $subtitle-color;
+      p{
+        color: $text-color;
+        font-size: 1.875rem;
+        margin-bottom: 1.563rem;
+        span{
+          color: $color-logo;
+        }
+      }
+      &___input{
+        display: flex;
+        input{
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
+          outline: none;
+          background-color: $body-background;
+          border: none;
+          color: $text-color;
+        }
+        button{
+          font-weight: 700;
+          padding: .75rem;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    &___links{
+      display: flex;
+      ul{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        color: $subtitle-color;
+        font-size: 1.25rem;
+        li:first-child{
+          color: $text-color;
+          font-weight: 500;
+        }
+        li{
+          margin-bottom: 1.25rem;
+        }
+      }
+    }
+  }
+  &__email{
+    display: flex;
+    justify-content: space-between;
+    color: $subtitle-color;
+    border-top: solid 1px;
+    border-color: $subtitle-color;
+    padding-bottom: 4.375rem;
+    padding-top: 4.375rem;
+    p{
+      font-size: 1.25rem;
+      padding-left: 5rem;
+      display: flex;
+      place-items: center;
+    }
+    div{
+      display: flex;
+      flex-direction: row;
+      padding-right: 5rem;
+      place-items: center;
+      img{
+        height: 1.875rem;
+        width: 1.875rem;
+        margin-right: 3.125rem;
+      }
+    }
+  }
+}
